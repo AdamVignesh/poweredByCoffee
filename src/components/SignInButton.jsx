@@ -28,5 +28,8 @@ export const SignInButton = () => {
             <button className="btn btn-dark"
             onClick={() => handleLogin("redirect")}>Sign in
             </button>
+
+// {/* <Button variant="outline-info" style={{  marginTop: "15px"  }} onClick={() => handleLogin("redirect")}>Get Started with SSO
+// </Button> */}
     )
 }
