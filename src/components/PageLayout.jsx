@@ -21,14 +21,14 @@ export const PageLayout = (props) => {
         <>
             <Navbar bg="primary" variant="dark" className="navbarStyle">
                 <a className="navbar-brand" href="/">
-                    Microsoft Identity Platform
+                    Presidio GPT
                 </a>
                 <div className="collapse navbar-collapse justify-content-end">
                     {isAuthenticated ? <SignOutButton /> : <SignInButton />}
                 </div>
             </Navbar>
             <h5>
-                <center>Welcome to the Microsoft Authentication Library For Javascript - React Quickstart</center>
+                <center>Powered By Coffee</center>
             </h5>
             <br />
             <br />

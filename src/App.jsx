@@ -23,7 +23,15 @@ const ProfileContent = () => {
                 account: accounts[0],
             })
             .then((response) => {
-                callMsGraph(response.accessToken).then((response) => setGraphData(response));
+               // callMsGraph(response.accessToken).then((response) => setGraphData(response));
+               console.log(response.accessToken +" response");
+               callMsGraph(response.accessToken)
+                .then((userData) => {
+                    setGraphData(userData);
+                })
+                .catch((error) => {
+                    console.error('Error fetching user data:', error);
+                }); 
             });
     }
 

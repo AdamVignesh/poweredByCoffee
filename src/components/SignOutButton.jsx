@@ -1,8 +1,5 @@
 import React from "react";
 import { useMsal } from "@azure/msal-react";
-import DropdownButton from "react-bootstrap/DropdownButton";
-import Dropdown from "react-bootstrap/Dropdown";
-
 /**
  * Renders a sign-out button
  */
@@ -24,9 +21,8 @@ export const SignOutButton = () => {
 
     
     return (
-        <DropdownButton variant="secondary" className="ml-auto" drop="start" title="Sign Out">
-            <Dropdown.Item as="button" onClick={() => handleLogout("popup")}>Sign out using Popup</Dropdown.Item>
-            <Dropdown.Item as="button" onClick={() => handleLogout("redirect")}>Sign out using Redirect</Dropdown.Item>
-        </DropdownButton>
+        <button className="btn btn-danger"
+            onClick={() => handleLogout("redirect")}>Sign out
+        </button>
     )
 }
